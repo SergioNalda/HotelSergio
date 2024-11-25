@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms - The Peninsula London</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+    
+    <style>
+        body {
+            background-color: #EFE5E5;
+            font-family: 'Inria Serif', serif;
+        }
+
+        .header-bg {
+            background-image: url('images/HeaderSala.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            position: relative;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content-container {
+            background-color: #f8f9fa;
+            border-radius: 0.75rem;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            padding: 3rem;
+        }
+
+        .room-card {
+            background-color: #fff;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .room-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .room-card-body {
+            padding: 1.5rem;
+        }
+
+        .room-card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .room-card-text {
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .room-card-button {
+            background-color: #AE9364;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .room-card-button:hover {
+            background-color: #8c784d;
+            color: white;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #1b1b1b;
+            color: white;
+            padding: 2rem 0;
+            font-family: 'Inria Serif', serif;
+        }
+
+        footer h5 {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #AE9364; /* Color al pasar el ratón sobre los enlaces */
+        }
+
+        .social-icons i {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .social-icons i:hover {
+            color: #AE9364; /* Color al pasar el ratón sobre los iconos sociales */
+        }
+
+        /* Estilo para la línea separadora */
+        .footer-divider {
+            height: 1px;
+            background-color: white;
+            margin: 1rem 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.875rem;
+        }
+
+        /* Enlaces del footer */
+        .footer-links a {
+            display: block;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(27, 27, 27, 0.9);
+        transition: background-color 0.3s ease;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header-bg d-flex align-items-center justify-content-center text-center text-white">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="display-4 fw-bold">Rooms & Suites</h1>
+            <div class="separator"></div>
+            <p class="fs-5 fw-light">LUXURY & COMFORT AT THE PENINSULA LONDON</p>
+        </div>
+    </header>
+
+    <!-- Rooms Section -->
+    <main class="container my-5">
+        <div class="content-container text-center">
+            <h2 class="fw-semibold">LUXURY IN ADVANCE</h2>
+            <hr class="my-4 mx-auto w-25">
+            <p class="text-center inria-font fs-5 mx-auto" style="max-width: 700px;">
+                Discover our luxurious rooms and suites, each designed with elegance, sophistication, and unmatched comfort. Choose the perfect setting for your stay in London.
+            </p>
+        </div>
+
+        <!-- Room Cards -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/deluxe room.jpg" alt="Deluxe Room">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Deluxe Room</h5>
+                        <p class="room-card-text">Experience refined luxury with plush furnishings, a king-size bed, and breathtaking city views.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/premierRoom.png" alt="Premier Room">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Premier Room</h5>
+                        <p class="room-card-text">Elegant and spacious, the Premier Room offers comfort with modern amenities and sophisticated decor.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/premier.jpg" alt="PremierPark Room">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Grand Premier Park Room</h5>
+                        <p class="room-card-text">This expansive suite features a separate living area, luxurious bath, and sweeping views of London.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/grandPremierTerraceRoom.jpg" alt="PremierTerrace Room">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Grand Premier Terrace Room</h5>
+                        <p class="room-card-text">Enjoy the best views with a private terrace, spacious living areas, and refined decor.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/juniorSuite.jpg" alt="juniorSuite">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Junior Suite</h5>
+                        <p class="room-card-text">Enjoy the best views with a private terrace, spacious living areas, and refined decor.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/DeluxeSuite.jpg" alt="Deluxe Suite">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Deluxe Suite</h5>
+                        <p class="room-card-text">Enjoy the best views with a private terrace, spacious living areas, and refined decor.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/Grand Premier Terrace Suite.jpg" alt="Premier Terrace Suite">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Grand Premier Terrace Suite</h5>
+                        <p class="room-card-text">Enjoy the best views with a private terrace, spacious living areas, and refined decor.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="room-card">
+                    <img src="images/GrandPremierSuite.jpg" alt="GrandPremierSuite">
+                    <div class="room-card-body">
+                        <h5 class="room-card-title">Grand Premier Suite</h5>
+                        <p class="room-card-text">Enjoy the best views with a private terrace, spacious living areas, and refined decor.</p>
+                        <a href="DatesRooms.html" class="room-card-button">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6 mb-4">
+                    <h5>About Us</h5>
+                    <div class="footer-links">
+                        <a href="#">Our Story</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press Room</a>
+                        <a href="#">Partnerships</a>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6 mb-4">
+                    <h5>Contact</h5>
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Locations</a>
+                        <a href="#">Reservations</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Peninsula London. All Rights Reserved.</p>
+                <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

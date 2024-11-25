@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Peninsula London</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+    
+    <style>
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #EFE5E5;
+        }
+
+        .header-bg {
+            background-image: url('images/HOTELFACHADA.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 80vh;
+            position: relative;
+        }
+       
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2; 
+        }
+
+        
+        .inria-font {
+            font-family: 'Inria Serif', serif;
+        }
+
+        
+        .content-container {
+            background-color: #f8f9fa; 
+            border-radius: 0.75rem;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            padding: 3rem;
+        }
+
+        .img-section {
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            width: 100%;
+        }
+
+        
+        .separator {
+            width: 200px; 
+            height: 2px;
+            background-color: white;
+            margin: 1.5rem auto; 
+        }
+
+        
+        .offer-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .offer-card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .offer-card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .offer-card-text {
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        
+        .offer-card-button, .explore-button {
+            align-self: flex-start;
+            background-color: transparent; 
+            border: 2px solid white; 
+            color: #AE9364; 
+            padding: 0.75rem 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+        }
+
+        
+        .offer-card-button:hover, .explore-button:hover {
+            background-color: #AE9364;
+            color: white;
+            border-color: #AE9364; 
+        }
+
+        
+        footer {
+            background-color: #1b1b1b;
+            color: white;
+            padding: 2rem 0;
+            font-family: 'Inria Serif', serif;
+        }
+
+        footer h5 {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #AE9364; 
+        }
+
+        .social-icons i {
+            color: white;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .social-icons i:hover {
+            color: #AE9364; 
+        }
+
+        
+        .footer-divider {
+            height: 1px;
+            background-color: white;
+            margin: 1rem 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.875rem;
+        }
+
+        
+        .footer-links a {
+            display: block;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+       
+
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header-bg container-fluid d-flex align-items-center justify-content-center text-center text-white">
+        
+        <div class="overlay"></div>
+
+        
+        <div class="header-content">
+            <h1 class="display-4 fw-bold">THE PENINSULA</h1>
+            <div class="separator"></div> 
+            <p class="fs-5 fw-light">L O N D O N</p>
+            <div class="mt-4">
+                <a href="#" class="btn btn-outline-light mx-2">CONTACT US</a>
+                <a href="DatesRooms.html" class="btn btn-outline-light mx-2">RESERVE</a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">The Peninsula</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fw-light" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-light" href="#footer">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-light" href="#offers">Offers</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link fw-light" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    
+    <main class="container my-5">
+        
+        <div class="content-container text-center">
+            <h2 class="fw-semibold">THE PENINSULA LONDON</h2>
+            <h3 class="fw-light mt-3 inria-font" style="font-size: 1.5rem;">EXPERIENCE</h3>
+            <hr class="my-4 mx-auto w-25">
+            <div class="text-center my-4">
+                <img src="images/hotel.jpg" alt="The Peninsula London" class="img-fluid">
+            </div>
+            
+            <p class="text-center inria-font fs-5 mx-auto" style="max-width: 700px;">
+                Superbly situated alongside Hyde Park Corner and Wellington Arch, The Peninsula London occupies one of the city’s most prestigious addresses. Newly built and impeccably designed to harmonise with the surrounding heritage buildings, the hotel is just steps away from Kensington Gardens, and other iconic attractions.
+            </p>
+        </div>
+
+        
+        <div class="content-container text-center my-5">
+            <div class="position-relative img-section mb-4 text-white" style="background-image: url('images/fotoLondon.jpg');">
+                <div class="overlay"></div>
+                
+                
+                <div class="position-relative d-flex flex-column justify-content-center align-items-center h-100" style="z-index: 2;">
+                    <h2 class="display-6 fw-light inria-font">EXPERIENCE THE WORLD FROM THE</h2>
+                    <p class="fs-4 fw-bold my-3 inria-font">PENINSULA <br> PERSPECTIVE</p>
+                </div>
+            </div>
+            
+            
+            <p class="text-center inria-font fs-5 mx-auto" style="max-width: 700px;">
+                At The Peninsula, we are known for our luxurious properties, set in some of the most remarkable destinations in the world. We are also known for our inimitable service, delivered by dedicated team members with a passion for their calling and an intimate knowledge of their cities.
+                <br><br>
+                Through the Perspectives campaign, we celebrate our people, the personal journeys that led them to The Peninsula, and their bond with the cities where they live and work.
+                <br><br>
+                We invite you to discover their stories.
+            </p>
+            
+           
+            <a href="#" class="explore-button inria-font">Explore More</a>
+        </div>
+
+       
+        <div id="offers" class="content-container text-center my-5">
+            <h2 class="fw-semibold inria-font">OFFERS</h2>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="offer-card">
+                        <img src="images/premier.jpg" class="card-img-top" alt="Offer 1">
+                        <div class="offer-card-body">
+                            <h5 class="offer-card-title inria-font">Luxury in Advance</h5>
+                            <p class="offer-card-text inria-font">Book ahead to enjoy a luxurious experience for less. By booking in advance, receive special Best Available Rates and "Peninsula Time", guaranteeing early check-in from 6:00 am and late check-out until 10:00 pm at no extra charge.</p>
+                            <a href="rooms.html" class="offer-card-button inria-font">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="offer-card">
+                        <img src="images/GrandPremierSuite.jpg" class="card-img-top" alt="Offer 2">
+                        <div class="offer-card-body">
+                            <h5 class="offer-card-title inria-font">Suite Escape</h5>
+                            <p class="offer-card-text inria-font">Enjoy the pinnacle of comfort and refinement with our Suite Escape package, offering complimentary daily breakfast for two guests and a luxurious stay in spacious suites with floor-to-ceiling views.</p>
+                            <a href="rooms.html" class="offer-card-button inria-font">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="offer-card">
+                        <img src="images/grandPremierTerraceRoom.jpg" class="card-img-top" alt="Offer 3">
+                        <div class="offer-card-body">
+                            <h5 class="offer-card-title inria-font">Value the Experience</h5>
+                            <p class="offer-card-text inria-font">Book a luxurious visit to The Peninsula London and Value The Experience with complimentary benefits such as daily breakfast and "Peninsula Time", guaranteeing early check-in from 6:00 am and late check-out until 10:00 pm at no extra charge.</p>
+                            <a href="rooms.html" class="offer-card-button inria-font">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="offer-card">
+                        <img src="images/juniorSuite.jpg" class="card-img-top" alt="Offer 4">
+                        <div class="offer-card-body">
+                            <h5 class="offer-card-title inria-font">Complimentary Third Night</h5>
+                            <p class="offer-card-text inria-font">Enjoy complimentary third night when you book via official website.</p>
+                            <a href="rooms.html" class="offer-card-button inria-font">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+        
+    <footer id="footer" class="text-center">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6 mb-4">
+                    <h5>About Us</h5>
+                    <div class="footer-links">
+                        <a href="#">Our Story</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press Room</a>
+                        <a href="#">Partnerships</a>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6 mb-4">
+                    <h5>Contact</h5>
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Locations</a>
+                        <a href="#">Reservations</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Peninsula London. All Rights Reserved.</p>
+                <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+            </div>
+        </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
